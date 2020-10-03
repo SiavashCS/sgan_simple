@@ -97,7 +97,7 @@ def train_from_folder(
     aug_prob = 0.05,
     aug_types = ['translation', 'cutout'],
     dataset_aug_prob = 0.,
-    multi_gpus = True
+    multi_gpus = False
 ):
     model_args = dict(
         name = name,

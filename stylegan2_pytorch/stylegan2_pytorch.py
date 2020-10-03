@@ -35,6 +35,9 @@ from linear_attention_transformer import ImageLinearAttention
 from PIL import Image
 from pathlib import Path
 
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
+
 try:
     from apex import amp
     APEX_AVAILABLE = True

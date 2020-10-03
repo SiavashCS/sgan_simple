@@ -74,7 +74,7 @@ def train_from_folder(
     network_capacity = 32,
     transparent = False,
     batch_size = 5,
-    gradient_accumulate_every = 6,
+    gradient_accumulate_every = 25,
     num_train_steps = 150000,
     learning_rate = 2e-4,
     lr_mlp = 0.1,
@@ -88,7 +88,7 @@ def train_from_folder(
     save_frames = False,
     num_image_tiles = 8,
     trunc_psi = 0.75,
-    fp16 = False,
+    fp16 = True,
     cl_reg = False,
     fq_layers = [],
     fq_dict_size = 256,
@@ -97,7 +97,7 @@ def train_from_folder(
     aug_prob = 0.05,
     aug_types = ['translation', 'cutout'],
     dataset_aug_prob = 0.,
-    multi_gpus = False
+    multi_gpus = True
 ):
     model_args = dict(
         name = name,

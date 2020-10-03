@@ -64,9 +64,9 @@ def run_training(rank, world_size, model_args, data, load_from, new, num_train_s
         dist.destroy_process_group()
 
 def train_from_folder(
-    data = '../dogs_processed',
-    results_dir = '../results',
-    models_dir = '../models',
+    data = './dogs_processed',
+    results_dir = './results',
+    models_dir = './models',
     name = 'dogs_test',
     new = False,
     load_from = -1,

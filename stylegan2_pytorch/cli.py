@@ -80,7 +80,7 @@ def train_from_folder(
     lr_mlp = 0.1,
     ttur_mult = 1.5,
     rel_disc_loss = False,
-    num_workers =  2,
+    num_workers =  12,
     save_every = 1000,
     generate = False,
     generate_interpolation = False,
